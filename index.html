@@ -1,12 +1,13 @@
 <html> 
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=0.6">
 	<script src="processing.js"></script>
 	<link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
 	<div style="width:470px;margin:40px auto 0px;text-align:center">
-		The Sisyphusian duck of <a href="http://fivethirtyeight.com/features/will-the-dog-catch-the-duck/" target="blank">The Riddler</a><br>paddles the waters of its eternal purgatory.
+		The Sisyphean duck of <a href="http://fivethirtyeight.com/features/will-the-dog-catch-the-duck/" target="blank">The Riddler</a><br>paddles the waters of its eternal purgatory.
 	</div>
 
 	<script type="text/processing" data-processing-target="target">
@@ -100,9 +101,9 @@
 		  //dog
 		  
 		  if (destination > dogtheta+0.05) {
-		    dogtheta += 0.01;
+		    dogtheta += 0.015;
 		  } else if (destination < dogtheta-0.05) {
-		    dogtheta -= 0.01;
+		    dogtheta -= 0.015;
 		  }
 		  
 		  if (destination - dogtheta > PI) {
@@ -151,9 +152,11 @@
 		  
 		  
 		  /*fill(0);
-		  ellipse(0,10,7,14); */
+		  ellipse(0,10,7,14); 
 		  fill(240,180,190);
-		  ellipse(0,4,7,7);
+		  ellipse(0,4,7,7); */
+		  fill(0);
+		  ellipse(0,5,5,5);
 		  
 		  
 		  popMatrix();
