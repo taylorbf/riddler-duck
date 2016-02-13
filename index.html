@@ -1,5 +1,6 @@
 <html> 
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="processing.js"></script>
 	<link href="style.css" rel="stylesheet" type="text/css">
 </head>
@@ -100,9 +101,9 @@
 		  //dog
 		  
 		  if (destination > dogtheta+0.05) {
-		    dogtheta += 0.01;
+		    dogtheta += 0.015;
 		  } else if (destination < dogtheta-0.05) {
-		    dogtheta -= 0.01;
+		    dogtheta -= 0.015;
 		  }
 		  
 		  if (destination - dogtheta > PI) {
